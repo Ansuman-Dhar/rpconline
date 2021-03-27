@@ -1,4 +1,9 @@
-const socket = io("https://rock-paper-cissor.herokuapp.com", {});
+const socket = io("https://rock-paper-cissor.herokuapp.com", {
+    withCredentials: true,
+    extraHeaders: {
+        "socket-header": ""
+    }
+});
 var users = [];
 var op = document.getElementById('op');
 
