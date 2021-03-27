@@ -1,4 +1,4 @@
-const socket = io('http://localhost:5000' || "https://rock-paper-cissor.herokuapp.com", {});
+const socket = io("https://rock-paper-cissor.herokuapp.com", {});
 var users = [];
 var op = document.getElementById('op');
 
